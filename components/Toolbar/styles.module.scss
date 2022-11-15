@@ -1,0 +1,20 @@
+@use "/utils/variables" as var;
+
+.toolBar {
+  background-color: rgb(227, 90, 250);
+  padding-bottom: 5px;
+  user-select: none;
+  .toolDiv {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    @media screen and (min-width: var.$medium) {
+      justify-content: flex-end;
+      gap: 50px;
+    }
+
+    span {
+      cursor: pointer;
+    }
+  }
+}

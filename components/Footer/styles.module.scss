@@ -1,0 +1,35 @@
+@use "/utils/variables" as var;
+.FooterComponent {
+  background-color: black;
+  position: static;
+  .footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    @media screen and (min-width: var.$small) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-column-gap: 10px;
+    }
+
+    h2 {
+      color: rgb(227, 90, 250);
+    }
+    li {
+      list-style: none;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+    .socialList {
+      display: flex;
+      font-size: 40px;
+      gap: 40px;
+      align-items: center;
+      padding-top: 20px;
+    }
+  }
+}

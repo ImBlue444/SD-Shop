@@ -1,0 +1,38 @@
+@use "/utils/variables" as var;
+
+@font-face {
+  font-family: "HarabaraHand";
+  src: url("./../fonts/HarabaraHand.ttf") format("opentype");
+}
+
+.Navbar {
+  background-color: rgb(227, 90, 250);
+  user-select: none;
+  align-items: center;
+  .logoMain {
+    h1 {
+      font-family: "HarabaraHand";
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      margin-bottom: 10px;
+      cursor: pointer;
+      @media screen and (min-width: var.$medium) {
+        font-size: 40px;
+      }
+    }
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .searchBar {
+      font-size: 15px;
+      border-radius: 8px;
+      @media screen and (min-width: var.$medium) {
+        font-size: 25px;
+      }
+    }
+    .searchBar:focus {
+      border: var.$matteBlack solid;
+    }
+  }
+}

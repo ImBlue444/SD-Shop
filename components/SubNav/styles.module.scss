@@ -1,0 +1,24 @@
+@use "/utils/variables" as var;
+
+.SubNav {
+  background-color: rgb(177, 71, 196);
+  user-select: none;
+  .group {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    li {
+      cursor: pointer;
+      font-size: small;
+      @media screen and (min-width: var.$small) {
+        font-size: larger;
+      }
+      padding: 5px;
+      overflow: hidden;
+    }
+    li:hover {
+      border-left: solid white 0.5px;
+      border-right: solid white 0.5px;
+    }
+  }
+}
