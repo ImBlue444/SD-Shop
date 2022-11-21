@@ -14,15 +14,11 @@ function MacroCard() {
         showIndicators={false}
         autoPlay={false}
         infiniteLoop={true}
+        showArrows={true}
+        stopOnHover={false}
       >
         <div>
-          <Image
-            rel="preload"
-            priority
-            loading="eager"
-            alt="timedOffer"
-            src={WallPic}
-          />
+          <Image priority loading="eager" alt="timedOffer" src={WallPic} />
         </div>
 
         <div>

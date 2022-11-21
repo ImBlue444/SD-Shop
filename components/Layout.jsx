@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar/index";
 import SubNav from "../components/SubNav/index";
 import Footer from "../components/Footer/index";
-import Categories from "../components/Categories/index";
+import Toolbar from "./Toolbar/index";
 
 function Layout({ children }) {
   return (
     <div>
+      <Toolbar />
       <Navbar />
       <SubNav />
 

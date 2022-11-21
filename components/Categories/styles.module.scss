@@ -1,1 +1,70 @@
 @use "/utils/variables" as var;
+
+.CategoriesHidden {
+  position: absolute;
+  z-index: 20;
+  left: -150px;
+  transition: all ease 1s;
+  font-size: large;
+  .List {
+    list-style: none;
+    background-color: var.$purpleLight;
+    padding-left: 5px;
+    border-top: 0.5px black solid;
+    border-right: 0.5px black solid;
+    .Group {
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 5px 0px;
+      }
+      li:hover {
+        background-color: var.$purple;
+      }
+      .Close {
+        color: black;
+        align-self: flex-end;
+      }
+      .Close:hover {
+        background: none;
+      }
+    }
+  }
+}
+
+.Categories {
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  transition: all ease 1s;
+  font-size: large;
+  .List {
+    list-style: none;
+    background-color: var.$purpleLight;
+    padding-left: 5px;
+    border-top: 0.5px black solid;
+    border-right: 0.5px black solid;
+    .Group {
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 5px 0px;
+        cursor: pointer;
+      }
+      li:hover {
+        background-color: var.$purple;
+      }
+      .Close {
+        color: black;
+        align-self: flex-end;
+      }
+      .Close:hover {
+        background: none;
+      }
+    }
+  }
+}

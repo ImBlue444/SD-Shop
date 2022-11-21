@@ -5,6 +5,7 @@
   background-color: #c595f1;
   align-items: center;
   font-family: "Red Hat Display", sans-serif;
+  color: white;
   .group {
     display: flex;
     justify-content: space-between;
@@ -19,10 +20,7 @@
       padding: 0px 70px;
     }
     li {
-      display: flex;
-      align-items: center;
       padding: 5px;
-      overflow: hidden;
       cursor: pointer;
       font-size: small;
       @media screen and (min-width: var.$small) {
@@ -33,11 +31,6 @@
       background-color: #b575f1;
       transition: all 0.5s ease;
       border-radius: 20px;
-    }
-    .subCat {
-      a {
-        display: block;
-      }
     }
   }
 }

@@ -1,11 +1,21 @@
 import styles from "./styles.module.scss";
 import { AiFillCaretRight } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
-function Categories() {
+function Categories(props) {
+  const [catIsActive, setCatisActive] = useState(props.isActive);
+  useEffect(() => {
+    setCatisActive(props.isActive);
+  }, [props.isActive]);
+
   return (
-    <div className={styles.Categories}>
+    <div className={catIsActive ? styles.Categories : styles.CategoriesHidden}>
       <ul className={styles.List}>
         <div className={styles.Group}>
+          {/* //todo fix this */}
+          <li className={styles.Close} onClick={() => setCatisActive(false)}>
+            X
+          </li>
           <li>Novità</li>
           <li>Tendenze</li>
           <li>Pacchetti</li>

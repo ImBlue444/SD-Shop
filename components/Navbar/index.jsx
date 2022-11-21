@@ -21,11 +21,11 @@ function Navbar() {
       </div>
       <div className={styles.CartSection}>
         <button className={styles.Cart}>
-          <FaShoppingCart />
+          <FaShoppingCart color="white" />
         </button>
         <span className={styles.cartInfo}>
-          <p>Prodotti: 0</p>
-          <p>€: 0.00</p>
+          <p>Prodotti: 10</p>
+          <p>€: 85.00</p>
         </span>
       </div>
     </div>
