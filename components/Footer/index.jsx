@@ -1,10 +1,9 @@
-import React from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
-import { BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
-import { BsYoutube } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs/index";
+import { BsInstagram } from "react-icons/bs/index";
+import { BsYoutube } from "react-icons/bs/index";
+import { BsLinkedin } from "react-icons/bs/index";
 
 function Footer() {
   return (

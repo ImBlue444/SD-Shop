@@ -6,33 +6,92 @@
 }
 
 .Navbar {
-  background-color: rgb(227, 90, 250);
-  user-select: none;
+  background-color: #e8d5f9;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 0px 2px;
+  @media screen and (min-width: var.$medium) {
+    padding: 0px 0px 0px 20px;
+  }
   .logoMain {
-    h1 {
+    .logoSmall {
       font-family: "HarabaraHand";
-      font-size: 15px;
+      font-size: 25px;
       color: rgb(255, 255, 255);
       margin-bottom: 10px;
+      background-color: white;
+      color: rgb(227, 90, 250);
+      border-radius: 22px;
+      padding: 5px 5px 3px 3px;
+
       cursor: pointer;
+      box-shadow: 2px 2px 5px black;
       @media screen and (min-width: var.$medium) {
-        font-size: 40px;
+        display: none;
       }
     }
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    .searchBar {
-      font-size: 15px;
-      border-radius: 8px;
+    .logoBig {
+      display: none;
       @media screen and (min-width: var.$medium) {
+        display: block;
+        font-family: "HarabaraHand";
+        color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        font-size: 45px;
+        filter: drop-shadow(16px 16px 14px rgb(0, 0, 0));
+        cursor: pointer;
+      }
+    }
+  }
+  .searchSection {
+    display: flex;
+    .searchBar {
+      width: 40vw;
+      font-size: 15px;
+      @media screen and (min-width: var.$small) {
         font-size: 25px;
       }
     }
-    .searchBar:focus {
-      border: var.$matteBlack solid;
+    .searchButton {
+      background-color: #c595f1;
+      padding: 1.5px 3px 1px 3px;
+      cursor: pointer;
+      @media screen and (min-width: var.$small) {
+        font-size: 20px;
+        padding: 5px 5px 5px 5px;
+      }
+    }
+    .searchButton:hover {
+      background-color: #b575f1;
+    }
+  }
+  .CartSection {
+    background: none;
+    border-bottom: none;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: #b575f1;
+    border-radius: 10px 0px 0px 10px;
+
+    .Cart {
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 2px 3px;
+      font-size: 20px;
+      @media screen and (min-width: var.$small) {
+        font-size: 40px;
+      }
+    }
+    .cartInfo {
+      padding: 3px 10px;
+      font-size: 12px;
+      @media screen and (min-width: var.$small) {
+        padding: 12px 12px;
+        font-size: 25px;
+      }
     }
   }
 }

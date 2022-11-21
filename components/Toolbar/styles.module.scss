@@ -1,13 +1,20 @@
 @use "/utils/variables" as var;
 
 .toolBar {
-  background-color: rgb(227, 90, 250);
+  background-color: #e8d5f9;
   padding-bottom: 5px;
+  padding-right: 10px;
   user-select: none;
   .toolDiv {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
+    .Fav:hover {
+      color: red;
+    }
+    .Info:hover {
+      color: blue;
+    }
     @media screen and (min-width: var.$medium) {
       justify-content: flex-end;
       gap: 50px;

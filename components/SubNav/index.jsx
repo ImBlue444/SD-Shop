@@ -1,15 +1,17 @@
-import React from "react";
 import styles from "./styles.module.scss";
+import { RiArrowDownSFill } from "react-icons/ri/index";
 
 function SubNav() {
   return (
     <div className={styles.SubNav}>
       <ul className={styles.group}>
-        <li>SubSec1</li>
-        <li>SubSec2</li>
-        <li>SubSec3</li>
-        <li>SubSec4</li>
-        <li>SubSec5</li>
+        <li>HOME</li>
+        <li className={styles.subCat}>
+          Categorie <RiArrowDownSFill />
+        </li>
+        <li>Novità</li>
+        <li>Tendenza</li>
+        <li>Pacchetti</li>
       </ul>
     </div>
   );

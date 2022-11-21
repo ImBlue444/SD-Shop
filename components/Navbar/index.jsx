@@ -1,20 +1,32 @@
-import React from "react";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import { SlMagnifier } from "react-icons/sl";
+import { SlMagnifier } from "react-icons/sl/index";
+import { FaShoppingCart } from "react-icons/fa/index";
 
 function Navbar() {
   return (
     <div className={styles.Navbar}>
       <div className={styles.logoMain}>
-        <h1>{"SempreDomenica"}</h1>
-        <div>
-          <input
-            className={styles.searchBar}
-            type="text"
-            placeholder="Cerca..."
-          ></input>
-        </div>
+        <h1 className={styles.logoSmall}>{"SD"}</h1>
+        <h1 className={styles.logoBig}>{"SempreDomenica"}</h1>
+      </div>
+      <div className={styles.searchSection}>
+        <input
+          className={styles.searchBar}
+          type="text"
+          placeholder="Cerca..."
+        ></input>
+        <button className={styles.searchButton}>
+          <SlMagnifier color="white" />
+        </button>
+      </div>
+      <div className={styles.CartSection}>
+        <button className={styles.Cart}>
+          <FaShoppingCart />
+        </button>
+        <span className={styles.cartInfo}>
+          <p>Prodotti: 0</p>
+          <p>€: 0.00</p>
+        </span>
       </div>
     </div>
   );

@@ -1,24 +1,43 @@
 @use "/utils/variables" as var;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 
 .SubNav {
-  background-color: rgb(177, 71, 196);
-  user-select: none;
+  background-color: #c595f1;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
   .group {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
+
+    @media screen and (min-width: var.$large) {
+      font-size: larger;
+      padding: 0px 80px;
+    }
+    @media screen and (min-width: var.$medium) {
+      font-size: larger;
+      padding: 0px 70px;
+    }
     li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      overflow: hidden;
       cursor: pointer;
       font-size: small;
       @media screen and (min-width: var.$small) {
         font-size: larger;
       }
-      padding: 5px;
-      overflow: hidden;
     }
     li:hover {
-      border-left: solid white 0.5px;
-      border-right: solid white 0.5px;
+      background-color: #b575f1;
+      transition: all 0.5s ease;
+      border-radius: 20px;
+    }
+    .subCat {
+      a {
+        display: block;
+      }
     }
   }
 }

@@ -1,8 +1,9 @@
 @use "/utils/variables" as var;
 
-.Carousel{
-    img{
-      max-width: 100%;
-      height: auto;
-    }
+.Carousel {
+  width: 100vw;
+  img {
+    max-width: 100%;
+    max-height: auto;
   }
+}

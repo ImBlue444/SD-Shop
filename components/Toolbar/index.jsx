@@ -1,8 +1,7 @@
-import React from "react";
 import styles from "../Toolbar/styles.module.scss";
-import { FaUserAlt } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
-import { BsFillInfoCircleFill } from "react-icons/bs";
+import { FaUserAlt } from "react-icons/fa/index";
+import { FaHeart } from "react-icons/fa/index";
+import { BsFillInfoCircleFill } from "react-icons/bs/index";
 
 function Toolbar() {
   return (
@@ -11,11 +10,11 @@ function Toolbar() {
         <span>
           <FaUserAlt />
         </span>
-        <span>
+        <span className={styles.Fav}>
           <FaHeart />
         </span>
         <span>Trad</span>
-        <span>
+        <span className={styles.Info}>
           <BsFillInfoCircleFill />
         </span>
       </div>

@@ -1,15 +1,14 @@
-import React from "react";
-import Navbar from "./Navbar";
-import SubNav from "./SubNav";
-import Toolbar from "./Toolbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar/index";
+import SubNav from "../components/SubNav/index";
+import Footer from "../components/Footer/index";
+import Categories from "../components/Categories/index";
 
 function Layout({ children }) {
   return (
     <div>
-      <Toolbar />
       <Navbar />
       <SubNav />
+
       {children}
       <Footer />
     </div>
