@@ -5,6 +5,11 @@ import { useState } from "react";
 
 function SubNav() {
   const [catHandler, setCatHandler] = useState(false);
+  const [childData, setChildData] = useState("");
+
+  const childToParent = (catIsActive) => {
+    setCatHandler(catIsActive);
+  };
   return (
     <div className={styles.SubNav}>
       <ul className={styles.group}>
@@ -19,7 +24,7 @@ function SubNav() {
         <li>Tendenza</li>
         <li>Pacchetti</li>
       </ul>
-      <Categories isActive={catHandler} />
+      <Categories isActive={catHandler} childToParent={childToParent} />
     </div>
   );
 }

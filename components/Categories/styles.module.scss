@@ -3,13 +3,13 @@
 .CategoriesHidden {
   position: absolute;
   z-index: 20;
-  left: -150px;
+  left: -155px;
   transition: all ease 1s;
-  font-size: large;
+  font-size: larger;
   .List {
     list-style: none;
     background-color: var.$purpleLight;
-    padding-left: 5px;
+    padding-left: 35px;
     border-top: 0.5px black solid;
     border-right: 0.5px black solid;
     .Group {
@@ -39,11 +39,11 @@
   z-index: 20;
   left: 0px;
   transition: all ease 1s;
-  font-size: large;
+  font-size: larger;
   .List {
     list-style: none;
     background-color: var.$purpleLight;
-    padding-left: 5px;
+    padding-left: 35px;
     border-top: 0.5px black solid;
     border-right: 0.5px black solid;
     .Group {

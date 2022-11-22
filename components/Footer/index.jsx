@@ -27,22 +27,22 @@ function Footer() {
         <ul className={styles.socialList}>
           <li>
             <Link href="/">
-              <BsFacebook />
+              <BsFacebook className={styles.Facebook} />
             </Link>
           </li>
           <li>
             <Link href="/">
-              <BsInstagram />
+              <BsInstagram className={styles.Instagram} />
             </Link>
           </li>
           <li>
             <Link href="/">
-              <BsYoutube />
+              <BsYoutube className={styles.Youtube} />
             </Link>
           </li>
           <li>
             <Link href="/">
-              <BsLinkedin />
+              <BsLinkedin className={styles.Linkedin} />
             </Link>
           </li>
         </ul>

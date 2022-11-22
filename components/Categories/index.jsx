@@ -12,8 +12,10 @@ function Categories(props) {
     <div className={catIsActive ? styles.Categories : styles.CategoriesHidden}>
       <ul className={styles.List}>
         <div className={styles.Group}>
-          {/* //todo fix this */}
-          <li className={styles.Close} onClick={() => setCatisActive(false)}>
+          <li
+            className={styles.Close}
+            onClick={() => props.childToParent(false)}
+          >
             X
           </li>
           <li>Novità</li>

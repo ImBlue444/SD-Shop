@@ -15,12 +15,12 @@ function Navbar() {
           type="text"
           placeholder="Cerca..."
         ></input>
-        <button className={styles.searchButton}>
+        <button aria-label="Search" className={styles.searchButton}>
           <SlMagnifier color="white" />
         </button>
       </div>
       <div className={styles.CartSection}>
-        <button className={styles.Cart}>
+        <button aria-label="Cart" className={styles.Cart}>
           <FaShoppingCart color="white" />
         </button>
         <span className={styles.cartInfo}>
