@@ -4,12 +4,13 @@
   background-color: black;
   position: static;
   padding-left: 15px;
+  padding-bottom: 20px;
   .footer {
     color: white;
     display: flex;
     text-align: center;
     flex-direction: column;
-    @media screen and (min-width: var.$small) {
+    @media screen and (min-width: 576px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(1, 1fr);
@@ -64,7 +65,7 @@
         border-radius: 5px;
         background-color: white;
       }
-      @media screen and (min-width: var.$large) {
+      @media screen and (min-width: 992px) {
         .Facebook {
           color: white;
           border-radius: 5px;

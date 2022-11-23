@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import WallPic from "./../../public/inverno.png";
+import sanvalentino from "./../../public/SanValentino.png";
 
 function MacroCard() {
   return (
@@ -18,15 +18,15 @@ function MacroCard() {
         stopOnHover={false}
       >
         <div>
-          <Image priority loading="eager" alt="timedOffer" src={WallPic} />
+          <Image priority loading="eager" alt="timedOffer" src={sanvalentino} />
         </div>
 
         <div>
-          <Image loading="eager" alt="timedOffer" src={WallPic} />
+          <Image loading="eager" alt="timedOffer" src={sanvalentino} />
         </div>
 
         <div>
-          <Image loading="eager" alt="timedOffer" src={WallPic} />
+          <Image loading="eager" alt="timedOffer" src={sanvalentino} />
         </div>
       </Carousel>
     </div>

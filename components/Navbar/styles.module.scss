@@ -11,10 +11,11 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 0px 0px 2px;
-  @media screen and (min-width: var.$medium) {
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     padding: 0px 0px 0px 20px;
   }
   .logoMain {
+    padding-left: 4px;
     .logoSmall {
       font-family: "HarabaraHand";
       font-size: 25px;
@@ -23,17 +24,17 @@
       background-color: white;
       color: rgb(227, 90, 250);
       border-radius: 22px;
-      padding: 5px 5px 3px 3px;
+      padding: 5px 5px 2px 3px;
 
       cursor: pointer;
       box-shadow: 2px 2px 5px black;
-      @media screen and (min-width: var.$medium) {
+      @media screen and (min-width: 1025px) {
         display: none;
       }
     }
     .logoBig {
       display: none;
-      @media screen and (min-width: var.$medium) {
+      @media screen and (min-width: 1025px) {
         display: block;
         font-family: "HarabaraHand";
         color: rgb(255, 255, 255);
@@ -49,7 +50,7 @@
     .searchBar {
       width: 40vw;
       font-size: 15px;
-      @media screen and (min-width: var.$small) {
+      @media screen and (min-width: 576px) {
         font-size: 25px;
       }
     }
@@ -57,7 +58,7 @@
       background-color: #c595f1;
       padding: 1.5px 3px 1px 3px;
       cursor: pointer;
-      @media screen and (min-width: var.$small) {
+      @media screen and (min-width: 576px) {
         font-size: 20px;
         padding: 5px 5px 5px 5px;
       }
@@ -81,14 +82,14 @@
       border: none;
       padding: 2px 3px;
       font-size: 20px;
-      @media screen and (min-width: var.$small) {
+      @media screen and (min-width: 576px) {
         font-size: 40px;
       }
     }
     .cartInfo {
       padding: 3px 10px;
       font-size: 12px;
-      @media screen and (min-width: var.$small) {
+      @media screen and (min-width: 576px) {
         padding: 12px 12px;
         font-size: 25px;
       }

@@ -11,11 +11,11 @@
     justify-content: space-between;
     list-style: none;
 
-    @media screen and (min-width: var.$large) {
+    @media screen and (min-width: 992px) {
       font-size: larger;
       padding: 0px 80px;
     }
-    @media screen and (min-width: var.$medium) {
+    @media screen and (min-width: 1025px) {
       font-size: larger;
       padding: 0px 70px;
     }
@@ -23,7 +23,7 @@
       padding: 5px;
       cursor: pointer;
       font-size: small;
-      @media screen and (min-width: var.$small) {
+      @media screen and (min-width: 576px) {
         font-size: larger;
       }
     }

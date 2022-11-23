@@ -15,7 +15,7 @@
     .Info:hover {
       color: blue;
     }
-    @media screen and (min-width: var.$medium) {
+    @media screen and (min-width: 1025px) {
       justify-content: flex-end;
       gap: 50px;
     }

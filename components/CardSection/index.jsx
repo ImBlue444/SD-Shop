@@ -19,10 +19,6 @@ function CardSection({ data }) {
               width={150}
               height={150}
             />
-            <p>
-              {"€"}
-              {e.price}
-            </p>
           </li>
         ))}
       </ul>

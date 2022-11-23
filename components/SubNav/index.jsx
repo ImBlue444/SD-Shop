@@ -20,9 +20,9 @@ function SubNav() {
         >
           Categorie <RiArrowDownSFill />
         </li>
-        <li>Novità</li>
-        <li>Tendenza</li>
-        <li>Pacchetti</li>
+        <li>Free</li>
+        <li>Tutorial</li>
+        <li>Contatti</li>
       </ul>
       <Categories isActive={catHandler} childToParent={childToParent} />
     </div>
