@@ -1,7 +1,9 @@
 @use "/utils/variables" as var;
 
 .Carousel {
+  user-select: none;
   width: 100%;
+  cursor: pointer;
   img {
     width: 100%;
     height: auto;

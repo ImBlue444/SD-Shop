@@ -6,9 +6,10 @@
   align-items: center;
   font-family: "Red Hat Display", sans-serif;
   color: white;
+  user-select: none;
   .group {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
 
     @media screen and (min-width: 992px) {
@@ -20,9 +21,11 @@
       padding: 0px 70px;
     }
     li {
-      padding: 5px;
+      padding: 6px 3px;
+      display: flex;
+      align-items: center;
       cursor: pointer;
-      font-size: small;
+      font-size: medium;
       @media screen and (min-width: 576px) {
         font-size: larger;
       }

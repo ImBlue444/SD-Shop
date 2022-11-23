@@ -1,6 +1,7 @@
 @use "/utils/variables" as var;
 .CardSection {
   position: relative;
+  user-select: none;
   @media only screen and (min-width: 320px) and (max-width: 480px) {
     top: -60px;
   }

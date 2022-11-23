@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import sanvalentino from "./../../public/SanValentino.png";
+import natale from "./../../public/Natale.png";
 
 function MacroCard() {
   return (
@@ -22,7 +23,7 @@ function MacroCard() {
         </div>
 
         <div>
-          <Image loading="eager" alt="timedOffer" src={sanvalentino} />
+          <Image loading="eager" alt="timedOffer" src={natale} />
         </div>
 
         <div>

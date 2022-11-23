@@ -6,12 +6,15 @@
   left: -155px;
   transition: all ease 1s;
   font-size: larger;
+  user-select: none;
   .List {
     list-style: none;
     background-color: var.$purpleLight;
-    padding-left: 35px;
-    border-top: 0.5px black solid;
-    border-right: 0.5px black solid;
+    padding-left: 30px;
+    padding-right: 5px;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
     .Group {
       display: flex;
       flex-direction: column;
@@ -40,12 +43,15 @@
   left: 0px;
   transition: all ease 1s;
   font-size: larger;
+  user-select: none;
   .List {
     list-style: none;
     background-color: var.$purpleLight;
-    padding-left: 35px;
-    border-top: 0.5px black solid;
-    border-right: 0.5px black solid;
+    padding-left: 30px;
+    padding-right: 5px;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
     .Group {
       display: flex;
       flex-direction: column;
